@@ -58,7 +58,7 @@ class RuleMiner(object):
             for i in range(len(itemsets)):
                 for j in range(i + 1, len(itemsets)):
                     combined_list = list(set(itemsets[i]) | set(itemsets[j]))
-                    combined_list.sort()
+                    
                     if len(combined_list) == cur_num_items + 1 and combined_list not in new_itemsets:
                         new_itemsets.append(combined_list)
 
